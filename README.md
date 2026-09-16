@@ -110,5 +110,5 @@ I like learning by building: writing small projects end-to-end, breaking them, f
 </p>
 
 <p align="center">
-  <sub><b>致谢</b> —— 本项目的排版完全参考 <a href="https://github.com/Lain-Ego0">@Lain-Ego0</a> 的主页，lain佬的机器人工程师学习计划是我的启蒙读物，带我走进了 robotics 的世界。也希望大家多多支持 lain 的 <a href="https://locowiki.github.io/index.html">LocoWiki</a> 开源社区。</sub>
+  <sub><b>致谢</b> —— 本项目排版完全参考 <a href="https://github.com/Lain-Ego0">@Lain-Ego0</a> 的主页，lain佬的机器人工程师学习计划是我的启蒙读物，带我走进了 robotics 的世界。希望大家多多支持 lain 的 <a href="https://locowiki.github.io/index.html">LocoWiki</a> 开源社区。</sub>
 </p>
