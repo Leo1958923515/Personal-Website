@@ -58,16 +58,9 @@ I like learning by building: writing small projects end-to-end, breaking them, f
 
 ### 📸 Selected Projects
 
-<!-- ✏️ 下面 4 条是待替换的示例条目：把项目名、链接、描述和技术标签换成你自己的即可，条数随意增减 -->
-<!-- ✏️ 提示：之前做的 personal-site 项目一旦推上 GitHub，可以把它作为第一条项目放进来 -->
+<!-- ✏️ 加新项目就按下面同样的格式复制一行：- **[项目名](仓库链接)** — 一句话亮点 + 反引号技术标签 -->
 
-- **[Project Name](https://github.com/Leo1958923515?tab=repositories)** — One line on what it does and what was interesting about building it. `Tag` `Tag`
-
-- **[Project Name](https://github.com/Leo1958923515?tab=repositories)** — One line on what it does and what was interesting about building it. `Tag` `Tag`
-
-- **[Project Name](https://github.com/Leo1958923515?tab=repositories)** — One line on what it does and what was interesting about building it. `Tag` `Tag`
-
-- **[Project Name](https://github.com/Leo1958923515?tab=repositories)** — One line on what it does and what was interesting about building it. `Tag` `Tag`
+- **[Personal-Website](https://github.com/Leo1958923515/Personal-Website)** — my GitHub profile page: plain Markdown, shields.io badges, no framework and no build step. I rewrote it about a dozen times, and most of that was deleting things. `Markdown` `shields.io`
 
 <sub>更多项目见 **[我的仓库列表 →](https://github.com/Leo1958923515?tab=repositories)**</sub>
 

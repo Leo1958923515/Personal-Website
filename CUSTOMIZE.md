@@ -4,12 +4,16 @@
 + Current Work + 代表项目 + 分组技能徽章 + 联系方式 + 签名。
 
 ```
-github-profile/
+github-profile/         ← 注意：本地目录名是 github-profile
 ├── README.md          ← 最终要上传到 GitHub 的文件（主要改这里）
 ├── preview.html       ← 本地预览（已生成，双击即可看渲染效果）
 ├── build_preview.py   ← 预览生成脚本（改完 README.md 后重新运行即可刷新）
+├── .gitignore         ← 挡系统垃圾文件（Thumbs.db / __pycache__ / .vscode 等）
 └── CUSTOMIZE.md       ← 本文件
 ```
+
+> **这个项目在 GitHub 上的仓库叫 `Personal-Website`**（<https://github.com/Leo1958923515/Personal-Website>），
+> 和本地目录名 `github-profile` 不一致 —— 这是当初建仓库时取的名，不影响功能，知道对应关系就行。
 
 ## 一、怎么让它显示在 GitHub 主页上
 
@@ -39,7 +43,7 @@ git push -u origin main
 - 顶部三个按钮：**高亮占位符**（把所有 `✏️` 位置标黄，方便定位）、**深色模式**、**复制 Markdown**；
 - 修改 `README.md` 后运行 `python build_preview.py` 重新生成预览。
 
-## 三、必改项（搜索 `✏️` 逐个替换，共 14 处）
+## 三、必改项（搜索 `✏️` 逐个替换，共 13 处）
 
 > 内容已按你的情况写成**机器人工程语境**（GMU · 机器人工程），下面是逐项说明。
 
@@ -56,7 +60,7 @@ git push -u origin main
 | 9 | 中文折叠块 4 段 | 上面 4 段的中文版 | 与英文对应，越具体越好 |
 | 10 | Basic Information 整栏 | **已删除**（2026-09-16）。原 5 条里「📺 在 B 站与知乎分享」与「🎯 今年目标」已并入 Current Work，其余三条（学校 / 方向 / 在学语言）与 About Me 完全重复 | 想加回：在 About Me 的 `---` 之后补一节 `### 📋 Basic Information`（英文条目 + `<details>` 中文折叠） |
 | 11 | Current Work 4 条 | 学习清单（C/C++、OpenCV、深度学习）/ 在做的项目 / B站与知乎分享 / 年度目标（RoboMaster 实验室） | 你正在做的事；后两条原属 Basic Information，已并入 |
-| 12 | Selected Projects 4 条 | 4 个 `Project Name` 示例条目 | 真实项目名 + 链接 + 一句话亮点 + 技术标签 |
+| 12 | Selected Projects | **已填 1 条**（2026-09-16）：`Personal-Website` 指向本项目的 GitHub 仓库，原 4 条 `Project Name` 占位已全部删除 | 加新项目见下方「加一个项目条目」；没有真实项目时，宁可留空也别放占位 |
 | 13 | Technical Stack 徽章 | 3 组共 13 枚：语言基础（C/C++/Python）、工具环境（Git/GitHub/VS Code/Linux/Markdown）、机器人 AI（ROS 2/STM32/NumPy/PyTorch/OpenCV） | 全部启用；删徽章直接删整行，加徽章见第四节 |
 | 14 | 反引号关键词行 | 已删除（原为 `Data Structures & Algorithms` · `Object-Oriented Programming` · `Mechanics Fundamentals` · `Circuit Basics` · `CAD Modeling Basics`） | 想加回来：在「💻 Languages & Fundamentals」那组徽章下方空一行补一条，词用 ` · ` 分隔 |
 | 15 | GitHub Stats 区 | 已整栏删除（原为 Stats + Top Languages + Streak + 奖杯 + 活跃度图 5 张卡片） | 想加回来见下方第五节，那里保留了全部 URL 与主题说明 |
