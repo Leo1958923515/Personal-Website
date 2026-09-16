@@ -3,39 +3,53 @@
 风格参考：<https://github.com/Lain-Ego0> —— Typing SVG 头部 + 胶囊徽章 + About Me（含中文折叠）
 + Current Work + 代表项目 + 分组技能徽章 + 联系方式 + 签名。
 
+## 〇、两个仓库的关系（先看这个，否则会找晕）
+
+`README.md` 只有**一份真身**，就在本目录。它需要出现在**两个** GitHub 仓库里，各有用处：
+
+| 本地目录 | GitHub 仓库 | 放什么 | 作用 |
+|---|---|---|---|
+| `github-profile/` | [Personal-Website](https://github.com/Leo1958923515/Personal-Website) | 全部文件 | 项目本体，给人看的「作品」 |
+| `../profile-homepage/` | [Leo1958923515](https://github.com/Leo1958923515/Leo1958923515) | **只有 `README.md`** | 主页仓库，GitHub 靠仓库名 = 用户名识别 |
+
 ```
-github-profile/         ← 注意：本地目录名是 github-profile
-├── README.md          ← 最终要上传到 GitHub 的文件（主要改这里）
-├── preview.html       ← 本地预览（已生成，双击即可看渲染效果）
-├── build_preview.py   ← 预览生成脚本（改完 README.md 后重新运行即可刷新）
-├── .gitignore         ← 挡系统垃圾文件（Thumbs.db / __pycache__ / .vscode 等）
-└── CUSTOMIZE.md       ← 本文件
+github-profile/              ← 项目本体（改内容都在这里改）
+├── README.md              ← 真身，主页正文（主要改这里）
+├── preview.html           ← 本地预览（已生成，双击即可看渲染效果）
+├── build_preview.py       ← 预览生成脚本（改完 README.md 后重新运行即可刷新）
+├── publish_homepage.py    ← 一键同步 README.md 到主页仓库并推送
+├── .gitignore             ← 挡系统垃圾文件（Thumbs.db / __pycache__ / .vscode 等）
+└── CUSTOMIZE.md           ← 本文件
+
+../profile-homepage/         ← 主页仓库的本地副本（内容由上面的脚本自动同步）
+└── README.md              ← 从 github-profile/README.md 复制过来的，别直接改这个
 ```
 
-> **这个项目在 GitHub 上的仓库叫 `Personal-Website`**（<https://github.com/Leo1958923515/Personal-Website>），
-> 和本地目录名 `github-profile` 不一致 —— 这是当初建仓库时取的名，不影响功能，知道对应关系就行。
+> ⚠️ 仓库名 `Personal-Website` 与本地目录名 `github-profile` 不一致，这是建仓库时取的，
+> 不影响功能 —— 但你自己找的时候记得这层对应关系。
 
-## 一、怎么让它显示在 GitHub 主页上
-
-1. 在 GitHub 新建一个仓库，**仓库名必须与你的用户名完全一致**：`Leo1958923515`
-   （大小写要一致，且勾选 Public）。
-2. 把本目录的 `README.md` 上传/推送到该仓库根目录。
-3. 打开 <https://github.com/Leo1958923515>，README 会自动出现在主页顶部。
-
-命令行方式：
+## 一、改完内容怎么让主页更新
 
 ```bash
 cd github-profile
-git init
-git add README.md
-git commit -m "docs: add profile README"
-git branch -M main
-git remote add origin https://github.com/Leo1958923515/Leo1958923515.git
-git push -u origin main
+python publish_homepage.py          # 同步 + 提交 + 推送（加 --dry-run 可先看差异）
 ```
 
-> 提示：`preview.html` / `build_preview.py` / `CUSTOMIZE.md` 只是本地辅助文件，
-> **不要**一起推送到 profile 仓库里，否则会显得杂乱。
+它会自动：把 `README.md` 复制到 `../profile-homepage/` → 提交 → 推送。
+刷一下 <https://github.com/Leo1958923515> 就能看到新内容。
+
+**为什么要有这个脚本**：本机网络走一个本地代理（`127.0.0.1:50315`），它会间歇性返回 502，
+`git push` 经常一次不成功。脚本内置了「先探路、通了才推」的重试循环，不用你手动重试。
+
+手动方式（脚本失效时备用）：
+
+```bash
+cd ../profile-homepage
+cp ../github-profile/README.md README.md
+git add README.md && git commit -m "docs: sync README" && git push
+```
+
+> 首次推送会弹出浏览器让你登录一次 GitHub；之后凭据存在 Windows 凭据管理器里，不再弹窗。
 
 ## 二、本地预览
 
