@@ -60,7 +60,7 @@ I like learning by building: writing small projects end-to-end, breaking them, f
 
 <!-- ✏️ 加新项目就按下面同样的格式复制一行：- **[项目名](仓库链接)** — 一句话亮点 + 反引号技术标签 -->
 
-- **[Personal-Website](https://github.com/Leo1958923515/Personal-Website)** — my GitHub profile page: plain Markdown, shields.io badges, no framework and no build step. I rewrote it about a dozen times, and most of that was deleting things. `Markdown` `shields.io`
+- **[Personal-Website](https://github.com/Leo1958923515/Personal-Website)** — my GitHub profile page
 
 <sub>更多项目见 **[我的仓库列表 →](https://github.com/Leo1958923515?tab=repositories)**</sub>
 
