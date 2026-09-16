@@ -113,7 +113,7 @@ I like learning by building: writing small projects end-to-end, breaking them, f
 ---
 
 <p align="center">
-  𝐶𝑢𝑚𝑢𝑙𝑎𝑡𝑖𝑣𝑒 𝑅𝑒𝑤𝑎𝑟𝑑𝑠 𝑒𝑞𝑢𝑎𝑙𝑠 𝑅𝑒𝑡𝑢𝑟𝑛. 🪜
+  𝐶𝑢𝑚𝑢𝑙𝑎𝑡𝑖𝑣𝑒 𝑅𝑒𝑤𝑎𝑟𝑑𝑠 𝑒𝑞𝑢𝑎𝑙 𝑅𝑒𝑡𝑢𝑟𝑛. 🪜
 </p>
 
 <p align="center">

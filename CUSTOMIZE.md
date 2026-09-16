@@ -61,7 +61,7 @@ git push -u origin main
 | 14 | 反引号关键词行 | 已删除（原为 `Data Structures & Algorithms` · `Object-Oriented Programming` · `Mechanics Fundamentals` · `Circuit Basics` · `CAD Modeling Basics`） | 想加回来：在「💻 Languages & Fundamentals」那组徽章下方空一行补一条，词用 ` · ` 分隔 |
 | 15 | GitHub Stats 区 | 已整栏删除（原为 Stats + Top Languages + Streak + 奖杯 + 活跃度图 5 张卡片） | 想加回来见下方第五节，那里保留了全部 URL 与主题说明 |
 | 16 | Connect 区 | 邮箱 / GitHub / B站（`Bilibili-LeoLGC`，官方粉 `FB7299`）/ 知乎（`Zhihu-LeoLGC`，`0066FF`） | ✅ 已填；想加平台按注释里模板复制一行。徽章格式 `平台名-显示名-背景色`，改显示名只动中间那段。**原 Connect 区下方的 `Stars` / `Followers` 卡片已于 2026-09-16 删除**，加回方法见第四节 |
-| 17 | 底部签名 | `𝐶𝑢𝑚𝑢𝑙𝑎𝑡𝑖𝑣𝑒 𝑅𝑒𝑤𝑎𝑟𝑑𝑠 𝑒𝑞𝑢𝑎𝑙𝑠 𝑅𝑒𝑡𝑢𝑟𝑛.` + 句末 🪜（用的是 Unicode 数学斜体字符，不是 `<i>`） | ✅ 已填，无需改；原理与改法见下方「签名为什么长这样」 |
+| 17 | 底部签名 | `𝐶𝑢𝑚𝑢𝑙𝑎𝑡𝑖𝑣𝑒 𝑅𝑒𝑤𝑎𝑟𝑑𝑠 𝑒𝑞𝑢𝑎𝑙 𝑅𝑒𝑡𝑢𝑟𝑛.` + 句末 🪜（用的是 Unicode 数学斜体字符，不是 `<i>`） | ✅ 已填，无需改；原理与改法见下方「签名为什么长这样」 |
 | 18 | 页脚致谢 | 签名下方灰色小字**一行**（中文「致谢」，Lain-Ego0 与 LocoWiki 均带链接）。原英文 `Thanks` 行已于 2026-09-16 删除 —— 与中文说的是同一件事，且两行加起来视觉分量比 About Me 还重 | ✅ 已填，无需改；不想保留致谢就删掉整个 `<p>` 块。想再加一行就补 `<sub>…</sub>` + `<br />` |
 
 ## 四、常用替换片段
@@ -72,8 +72,8 @@ GitHub 会把 markdown 里的 `style` 属性剥掉，所以没法指定 `font-fa
 只能直接用 **Unicode 数学斜体字符**（Mathematical Italic，U+1D434–U+1D467）——这些字符自带斜体衬线字形，任何平台都不依赖 CSS：
 
 ```
-ASCII :  Cumulative Rewards equals Return.
-斜体版:  𝐶𝑢𝑚𝑢𝑙𝑎𝑡𝑖𝑣𝑒 𝑅𝑒𝑤𝑎𝑟𝑑𝑠 𝑒𝑞𝑢𝑎𝑙𝑠 𝑅𝑒𝑡𝑢𝑟𝑛.
+ASCII :  Cumulative Rewards equal Return.
+斜体版:  𝐶𝑢𝑚𝑢𝑙𝑎𝑡𝑖𝑣𝑒 𝑅𝑒𝑤𝑎𝑟𝑑𝑠 𝑒𝑞𝑢𝑎𝑙 𝑅𝑒𝑡𝑢𝑟𝑛.
 ```
 
 要改内容：**别手打**，在搜索引擎搜「mathematical italic text generator」，把句子粘进去转换，再贴回来。
@@ -84,7 +84,7 @@ ASCII :  Cumulative Rewards equals Return.
 > - 搜索引擎和不支持该 Unicode 块的字体可能显示成方框；
 > - 复制出来是斜体码位，不是普通字母。
 >
-> 想换回普通文字：把 `𝐶𝑢𝑚𝑙𝑎𝑡𝑖𝑣𝑒…` 那段整体替换成 `Cumulative Rewards equals Return.`，外面套 `<i>…</i>` 即可。
+> 想换回普通文字：把 `𝐶𝑢𝑚𝑙𝑎𝑡𝑖𝑣𝑒…` 那段整体替换成 `Cumulative Rewards equal Return.`，外面套 `<i>…</i>` 即可。
 
 **换一个图标**（句末用的是 🪜 梯子 emoji —— Unicode 里没有「楼梯」，只有梯子；想换成真正的楼梯图标见下）
 
