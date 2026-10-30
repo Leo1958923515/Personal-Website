@@ -74,7 +74,7 @@ git add README.md && git commit -m "docs: sync README" && git push
 | 9 | 中文折叠块 4 段 | 上面 4 段的中文版 | 与英文对应，越具体越好 |
 | 10 | Basic Information 整栏 | **已删除**（2026-09-16）。原 5 条里「📺 在 B 站与知乎分享」与「🎯 今年目标」已并入 Current Work，其余三条（学校 / 方向 / 在学语言）与 About Me 完全重复 | 想加回：在 About Me 的 `---` 之后补一节 `### 📋 Basic Information`（英文条目 + `<details>` 中文折叠） |
 | 11 | Current Work 4 条 | 学习清单（C/C++、OpenCV、深度学习）/ 在做的项目 / B站与知乎分享 / 年度目标（RoboMaster 实验室） | 你正在做的事；后两条原属 Basic Information，已并入 |
-| 12 | Selected Projects | **已填 1 条**（2026-09-16）：`Personal-Website` 指向本项目的 GitHub 仓库，原 4 条 `Project Name` 占位已全部删除 | 加新项目见下方「加一个项目条目」；没有真实项目时，宁可留空也别放占位 |
+| 12 | Selected Projects | **已填 2 条**：`dsh-popup-cards`（2026-10-31 新增，置顶）+ `Personal-Website`（2026-09-16 填）。原 4 条 `Project Name` 占位已全部删除 | 加新项目见下方「加一个项目条目」；没有真实项目时，宁可留空也别放占位 |
 | 13 | Technical Stack 徽章 | 3 组共 13 枚：语言基础（C/C++/Python）、工具环境（Git/GitHub/VS Code/Linux/Markdown）、机器人 AI（ROS 2/STM32/NumPy/PyTorch/OpenCV） | 全部启用；删徽章直接删整行，加徽章见第四节 |
 | 14 | 反引号关键词行 | 已删除（原为 `Data Structures & Algorithms` · `Object-Oriented Programming` · `Mechanics Fundamentals` · `Circuit Basics` · `CAD Modeling Basics`） | 想加回来：在「💻 Languages & Fundamentals」那组徽章下方空一行补一条，词用 ` · ` 分隔 |
 | 15 | GitHub Stats 区 | 已整栏删除（原为 Stats + Top Languages + Streak + 奖杯 + 活跃度图 5 张卡片） | 想加回来见下方第五节，那里保留了全部 URL 与主题说明 |
@@ -175,11 +175,15 @@ ASCII :  Cumulative Rewards equal Return.
 
 > 删掉的原因：新账号上这两枚徽章会如实显示 `Stars: 0` / `Followers: 0`，对路人来说是负资产。**等仓库有 star / 有 follower 之后再加回来。**
 
-**加一个项目条目**（保持与其他条目同样的四段式结构）
+**加一个项目条目**（一行式，与现有两条保持同构）
 
 ```markdown
-- **[项目名](仓库链接)** — 它解决什么问题、有什么亮点。 `技术标签` `技术标签`
+- **[项目名](仓库链接)** — 一句话定位
 ```
+
+> 写法约定（2026-10-31 定稿）：**一行、不加反引号技术标签、句末不加句号、破折号用 `—`、描述首字母小写**。
+> 技术栈交给下方 Technical Stack 徽章栏，这里只回答「这东西是干什么的」。
+> 多条之间空一行；新项目想放最上面就直接插在第一条之前。
 
 ## 五、数据卡片（已从 README 删除，需要时可参考本节加回）
 

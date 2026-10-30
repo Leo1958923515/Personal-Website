@@ -58,7 +58,9 @@ I like learning by building: writing small projects end-to-end, breaking them, f
 
 ### 📸 Selected Projects
 
-<!-- ✏️ 加新项目就按下面同样的格式复制一行：- **[项目名](仓库链接)** — 一句话亮点 + 反引号技术标签 -->
+<!-- ✏️ 加新项目就按下面同样的格式复制一行：- **[项目名](仓库链接)** — 一句话定位（不加技术标签、句末不加句号） -->
+
+- **[dsh-popup-cards](https://github.com/Leo1958923515/dsh-popup-cards)** — topmost Windows cards that tell me when DeepSeek Harness needs a reply
 
 - **[Personal-Website](https://github.com/Leo1958923515/Personal-Website)** — my GitHub profile page
 
